@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-wine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/main.js">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">Sweetie Pie's Wine - Wine Bar 
+                            <div class="header__qr">
+                                <img src="/asset/img/qr-code.png" alt="qr-code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="/asset/img/app.png" alt="App Store" class="header__qr-download">
+                                    </a>
+
+                                    <a href="" class="header__qr-link">
+                                        <img src="/asset/img/google.png" alt="Google Play" class="header__qr-download">
+                                    </a>    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--no-pointer">Customer Care</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook-square"></i>
+                            </a>
+
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item--link">
+                                <i class="header__navbar-icon fas fa-bell"></i>
+                                Notification
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify_header">
+                                    <h3 class="">New Notification</h3>
+                                </header>
+
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/asset/img/wine-noti-3.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Cabernet Sauvignon</span>
+                                                <span class="header__notify-desc">
+                                                    As one of the most famous red wine grape varieties in the world, high-value wines.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/asset/img/wine-noti-1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Merlot</span>
+                                                <span class="header__notify-desc">One of the major Bordeaux grape varieties often used to blend with many other grape varieties</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/asset/img/wine-noti-2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Zinfandel</span>
+                                                <span class="header__notify-desc">Zinfandel is a red wine grape variety grown in California</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">See All</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item--link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Help
+                            </a>
+                        </li>
+                            <!-- when the user is not logged in -->
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate js-btn-register">Register</li>
+                        <li class="header__navbar-item header__navbar-item--bold js-btn-login">Log in</li>
+
+                            <!-- When user is logged in -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="/asset/img/ava.jpg" alt="" class="header__navbar-user-ava">
+                            <span class="header__navbar-user-name">Dieu Thao</span>
+                            <ul class="header__navbar-user-infor">
+                                <li class="header__navbar-user-item">
+                                    <a href="">My Account</a>
+                                </li>
+
+                                <li class="header__navbar-user-item">
+                                    <a href="">My Address</a>
+                                </li>
+
+                                <li class="header__navbar-user-item">
+                                    <a href="">Purchase Order</a>
+                                </li>
+
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </nav>
+                <!-- Header width search -->
+                <div class="header-logo-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="asset/img/sweetiepie.jpg" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Search Product">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Search History</h3>
+                                <ul class="header__search-history-list">    
+                                    <li class="header__search-history-item">
+                                        <a href="">Red Wine Cabernet Sauvignon</a>
+                                    </li>
+
+                                    <li class="header__search-history-item">
+                                        <a href="">White Wine Gewurztraminer</a>
+                                    </li>
+
+                                    <li class="header__search-history-item">
+                                        <a href="">White Wine Cabernet Sauvignon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">In Shop</span>
+                            <i class="header__down-icon fas fa-angle-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>In Shop </span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+
+                                <li class="header__search-option-item">
+                                    <span>Out Shop</span>
+                                    <!-- <i class="fas fa-check"></i> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn"><i class="header__search-icon fas fa-search"></i></button>
+                    </div> 
+
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-cart-arrow-down"></i>
+                            <div class="header__cart-list header__cart-list--no-card">
+                                <img src="./asset/img/no-cart-item.jpg" alt=""  class="header__cart-no-cart">
+                                <h3 class="header__cart-list-msg">Your cart is currently empty</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>
+                                VARIETAL
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Red Wine</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">White Wine</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Rosé Wine</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Champagne & Sparkling</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Dessert, Shery, & Port</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Glassware & Accessories</a>
+                                </li>
+                            </ul>
+                            
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">
+                                Sorted by
+                            </span>
+                            <button class="home-filter__btn btn">Popular</button>
+                            <button class="home-filter__btn btn btn--primary">Latest</button>
+                            <button class="home-filter__btn btn">Selling</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Price</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Price: From low to high</a>
+                                    </li>
+                                    
+                                    <li class="select-input__item">
+                                        
+                                        <a href="" class="select-input__link">Price: From hight to low</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-number">
+                                    <span class="home-filter__page-curent">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/img/wine-noti-1.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Leap-Wine-Cellars.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Shafer-Relentless-2017.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Chauteau-Hyot-2018.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Chateau-Lynch-Bages-2017.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Hussonet.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Baron-philip.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Santa.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Errazuriz.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">   
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"">
+                                            <img class="home-product-item__img-brand" src="/asset/product_img/Lapostolle.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Shafer One Point Five Cabernet Sauvignon 2018</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">$149</span>
+                                            <span class="home-product-item__price-current">$134</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__cart">
+                                            <span class="home-product-item__cart-btn">Add to Cart</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Favourite</span>
+                                            
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-label">Sale Off</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                        </div>
+                                    </div>              
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link pagination-item--active">1</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer ">
+            <div class="grid">
+                <div class="grid__row footer-content">
+                    <div class="grid__column-4">
+                        <div class="footer-content__refer">
+                            <ul class="footer-content__refer--link">
+                                <li class="footer-content__refer-invite footer-content--italic">Refer a Friend</li>
+                                <li class="footer-content__refer-invite footer-content-bold">Give $100, Get $100</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-content__icon">
+                            <ul class="footer-content__icon--list">
+                                <li class="footer-content__icon--social">
+                                    <a href=""><i class="footer-content__icon-join-us fab fa-instagram"></i></a>
+                                </li>
+
+                                <li class="footer-content__icon--social">
+                                    <a href=""><i class="footer-content__icon-join-us fab fa-facebook"></i></a>
+                                </li>
+
+                                <li class="footer-content__icon--social">
+                                    <a href=""><i class="footer-content__icon-join-us fab fa-youtube"></i></a>
+                                </li>
+
+                                <li class="footer-content__icon--social">
+                                    <a href=""><i class="footer-content__icon-join-us fab fa-twitter"></i></a>
+                                </li>
+
+                                <li class="footer-content__icon--social">
+                                    <a href=""><i class="footer-content__icon-join-us fab fa-pinterest-p"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="footer-copyright">
+                            <span class="footer-copyright-title">The Sweetiepie's Wine - Wine Bar</span>
+                        </div>
+
+                    </div>
+
+                        <div class="grid__column-6 footer-line">
+                            <div class="footer-contact-us">
+                                <div class="grid__row">
+                                    <div class="grid__column-6-2">
+                                        <h3 class="footer-title">Customer Care</h3>
+                                        <a href="" class="footer-title__link">
+                                            <ul class="footer-title__customer-care">
+                                                <li class="footer-title-contact">Contact Us</li>
+                                                <li class="footer-title-contact">Track an Order</li>
+                                                <li class="footer-title-contact">Email Preferences</li>
+                                                <li class="footer-title-contact">Corporate Gifts</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+            
+                                    <div class="grid__column-6-2">
+                                        <h3 class="footer-title">About Wine.com</h3>
+                                        <a href="" class="footer-title__link">
+                                            <ul class="footer-title__customer-care">
+                                                <li class="footer-title-contact">About Us</li>
+                                                <li class="footer-title-contact">Careers</li>
+                                                <li class="footer-title-contact">Press</li>
+                                                <li class="footer-title-contact">Investors</li>
+                                            </ul>
+                                        </a>
+
+                                    </div>
+            
+                                    <div class="grid__column-6-2">
+                                        <h3 class="footer-title">How to Work With Us</h3>
+                                        <a href="" class="footer-title__link">
+                                            <ul class="footer-title__customer-care">
+                                                <li class="footer-title-contact">Sell Us Your Wine</li>
+                                                <li class="footer-title-contact">Affiliate Program</li>
+                                                <li class="footer-title-contact">Partnerships</li>
+                                                <li class="footer-title-contact">Partnerships</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <div class="end-title">
+                <span class="end-title__privacy">
+                    Privacy Policy | Terms of Service |Do not sell my personal information | Site Map | © 2021 Wine.com, LLC. All rights reserved
+                </span>
+            </div>
+        </div>
+    
+
+    <!-- Modal layout -->
+        <!-- Register form -->
+    <div class="modal-register">
+        <div class="modal__body"> 
+            <div class="auth-form js-auth-form-register">
+                <div class="auth__form-container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Register</h3>
+                        <span id="js-login-id" class="auth-form__switch-btn js-login">Log In</span>
+                    </div>
+                    <div class="auth-form_form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email cua ban">
+                        </div>
+
+                        <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mat khau cua ban">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mat khau cua ban">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__polici-text">
+                            Bang viec dang ki ban da dong y voi Shoppee ve
+                            <a href="" class="auth-form__text-link">Dieu khoan dich vu</a> & 
+                            <a href="" class="auth-form__text-link">Chinh sach bao mat</a>
+                        </p>
+                        
+                    </div>
+                    <div class="auth-form__controll">
+                        <button class="btn auth-form__controll-back js-register-back">Tro lai</button>
+                        <button class="btn btn--primary">Register</button>
+                    </div>
+                </div>
+
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--fb btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                    <span class="auth-form__social--title">Connect with facebook</span>
+                </a>
+
+                <a href="" class="auth-form__social--gg btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-google"></i>
+                    <span class="auth-form__social--title">Connect with Google</span>
+                </a>
+            </div>
+
+            </div>
+        </div>
+        
+    </div> 
+
+        <!-- LogIn form -->
+    <div class="modal-login">
+        <div class="modal__body">
+            <div class="auth-form js-auth-form-login">
+                
+                <div class="auth__form-container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Dang nhap</h3>
+                        <span id="js-register-id" class="auth-form__switch-btn">Dang ki</span>
+                    </div>
+                    <div class="auth-form_form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email cua ban">
+                        </div>
+
+                        <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mat khau cua ban">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controll">
+                        <button class="btn auth-form__controll-back js-login-back">Tro lai</button>
+                        <button class="btn btn--primary">Dang Nhap</button>
+                    </div>
+                </div>
+
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--fb btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                    <span class="auth-form__social--title">Log in with facebook</span>
+                </a>
+
+                <a href="" class="auth-form__social--gg btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-google"></i>
+                    <span class="auth-form__social--title">Log in with Google</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Register JS
+        const register = document.querySelector('.js-btn-register');
+        const modall = document.querySelector('.modal-register');
+        const closeBtnRe = document.querySelector('.js-register-back')
+        const modalRegister = document.querySelector('.js-auth-form-register')
+
+        function showRegister() {
+            modall.classList.add('open');
+        }
+
+        function hideRegister() {
+            modall.classList.remove('open')
+        }
+
+        register.addEventListener('click', showRegister)
+        modall.addEventListener('click', hideRegister)
+        closeBtnRe.addEventListener('click', hideRegister)
+        modalRegister.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+        // LogIn JS
+        const logIn = document.querySelector('.js-btn-login');
+        const modal= document.querySelector('.modal-login');
+        const closeBtn = document.querySelector('.js-login-back');
+        const modalLogin=document.querySelector('.js-auth-form-login');
+
+        function showLogin() {
+            modal.classList.add('open')
+        }
+        
+        function hideLogin() {
+            modal.classList.remove('open')
+        }
+
+        logIn.addEventListener('click', showLogin);
+        closeBtn.addEventListener('click', hideLogin);
+        modal.addEventListener('click' ,hideLogin);
+        modalLogin.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+        
+        var logInBtn = document.getElementById('js-login-id')
+        var registerBtn =document.getElementById('js-register-id')
+        logInBtn.onclick = function() {
+            hideRegister()
+            showLogin()
+        }
+
+        registerBtn.onclick = function() {
+            hideLogin()
+            showRegister()
+        }
+        
+
+
+    </script>
+    </div>
+</body>
+</html>
+
+

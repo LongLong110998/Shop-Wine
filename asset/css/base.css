@@ -1,0 +1,181 @@
+:root {
+    --primary-color: rgb(192, 220, 247);
+    --primary-text: rgb(149, 180, 218);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+/* 1rem = 10px
+*/
+html{
+    font-size:62.5%;
+    line-height: 1.6rem;
+    font-family: 'BentonSans',sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test responsive */
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40%;
+}
+
+.grid__column-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60%;
+}
+
+.grid__column-6-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3333%;
+}
+
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateZ(70px);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(200px);
+    }
+    
+}
+
+@keyframes headerNotiGrow{
+    from {
+        opacity: 0.1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Modal CSS */
+
+.modal__body {
+    margin: auto;
+    z-index: 1;
+}
+
+/* Button Style */
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.btn.btn--size-s {
+    font-size: 1.2rem;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: rgb(101, 166, 209);
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item {
+    list-style: none;
+    margin: 12px;
+}
+
+.pagination-item__link {
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item__icon {
+
+}
+
+.pagination-item--active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
